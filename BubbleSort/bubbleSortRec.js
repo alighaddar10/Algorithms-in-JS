@@ -4,16 +4,6 @@ function swap(array, a, b){
     array[b] = temp;
 }
 
-function arrayLength(array){
-    let i = 0;
-
-    while(array[i] != null){
-        i++;
-    }
-
-    return i;
-}
-
 function bubbleSortRec(array, len){
     if(len = 1)
         return;
@@ -27,7 +17,7 @@ function bubbleSortRec(array, len){
 }
 
 function printArray(array){
-    let len = arrayLength(array);
+    let len = array.length;
     let output = "";
 
     for(let i = 0; i < len; i++){
